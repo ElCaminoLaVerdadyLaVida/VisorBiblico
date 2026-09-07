@@ -1,1 +1,51 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #050811;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
 
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-panel-gold {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+}
+
+.word-active {
+  background-color: rgba(245, 158, 11, 0.25);
+  color: #fbbf24;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 1px 2px;
+}
+
+@keyframes divinePulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(245, 158, 11, 0.2); }
+  50% { box-shadow: 0 0 30px rgba(245, 158, 11, 0.5); }
+}
+.divine-glow {
+  animation: divinePulse 3s infinite ease-in-out;
+}
